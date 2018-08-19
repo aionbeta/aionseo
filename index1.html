@@ -80,11 +80,10 @@ $(document).ready(function(){
 				$(idName).find('.check').addClass('crowded');
 			}
 		});
-	});
+	})
 	.fail(function(){
 		window.alert('읽기 오류');
 	});
-
 	//클릭하면 빈 좌석 상태를 표시
 	$('.check').on('click', function(){
 		if($(this).hasClass('crowded')) {
